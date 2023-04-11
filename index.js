@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import Info from "./Info"
 import AboutMe from "./About"
 import ContactDetails from "./Contact"
@@ -15,4 +15,6 @@ export default function App() {
   )
 }
 
-ReactDOM.render(<App />, document.getElementById("root"))
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<App/>)
